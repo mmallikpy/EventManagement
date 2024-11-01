@@ -1,0 +1,57 @@
+body {
+    font-family: verdana;
+    background-color: #c7c2c0;
+  }
+.main_div{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  /* For sinin form */
+.login_form_div{
+  background-color: white;
+  height: 400px;
+  width: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 42px -3px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 42px -3px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 42px -3px rgba(66, 68, 90, 1);
+  }
+
+.username_input{
+  width: 300px;
+  height: 40px;
+}
+.password_input{
+  width: 300px;
+  height: 40px;
+}
+.login_button{
+  color: white;
+  font-weight: bold;
+}
+
+.user_input{
+  width: 300px;
+  height: 40px;
+}
+
+.email_input{
+  width: 300px;
+  height: 40px;
+}
+
+.pass1_input{
+  width: 300px;
+  height: 40px;
+}
+
+.pass2_input{
+  width: 300px;
+  height: 40px;
+}
+

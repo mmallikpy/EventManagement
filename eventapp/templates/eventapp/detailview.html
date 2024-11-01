@@ -1,0 +1,16 @@
+{% load static %} <br />
+{% include 'eventapp/base.html' %} <br />
+{% block content %} <br />
+<div class="container text-black bg-white p-5">
+  {% for event in event_details %}
+  <h3 class="mb-3">Event Name : - {{ event.event_name }}</h3>
+  <h3 class="mb-3">Event date : - {{ event.event_date }}</h3>
+  <h3 class="mb-3">Event Location : - {{ event.event_location }}</h3>
+  <h3 class="mb-3">
+    Event Description : -
+    <p>{{ event.event_descriptions }}</p>
+  </h3>
+  <a href="{% url 'home' %}" class="btn btn-success mt-2">Back</a>
+  {% endfor %}
+</div>
+{% endblock %}

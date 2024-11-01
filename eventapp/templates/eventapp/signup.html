@@ -1,0 +1,32 @@
+{% load static %} <br />
+{% include 'eventapp/base.html' %} <br />
+{% block content %}
+<div class="main_div">
+  <div class="login_form_div mt-5">
+    <form method="post" action="#">
+      {% csrf_token %} <br />
+      {% if userCre.errors %}
+
+      <div class="alert alert-danger">
+        <ul>
+          {% for field, errors in userCre.errors.items %}
+          <br />
+          {% for error in errors %}
+          <li>{{ field }}: {{ error }}</li>
+          {% endfor %} {% endfor %}
+        </ul>
+      </div>
+
+      {% endif %} 
+
+      {% for x in userCre %} 
+        <div>{{ x }}</div> 
+      {% endfor %}
+      <div class="mt-3">
+        <button class="btn btn-success" type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

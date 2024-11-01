@@ -1,0 +1,30 @@
+.p_main_div{
+    height: auto;
+    width: 100%;    
+}
+.p_top{
+    height: 150px;
+}
+.p_middle{
+    height: 350px;
+    width: 25%;
+    margin-left: 100px;
+    background-color: white;
+    border-radius: 5px
+}
+.p_bottom{
+    background-color: rgb(71, 170, 177);
+}
+.profile_div{
+    display: flex;
+    flex-direction: row;
+}
+
+.image_div{
+    height: 200px;
+    width: 200px;
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 2px solid aqua;
+}
+

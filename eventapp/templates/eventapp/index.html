@@ -1,0 +1,20 @@
+{% load static %} <br />
+{% include 'eventapp/base.html' %} <br />
+{% block content %} <br />
+<div class="container">
+  <div class="row">
+    {% for event in event_data %}
+    <div class="card col-3 mr-2 mb-2">
+      <div class="card-body">
+        <h5 class="card-title">{{ event.event_name }}</h5>
+        <p class="card-text">{{ event.event_descriptions }}</p>
+        <a href="{% url 'detailview' event.id %}" class="btn btn-primary"
+          >Go Details</a
+        >
+        <a href="{% url 'signin' %}" class="btn btn-primary">BookNow</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% load static %}<br />
+{% include 'eventapp/base.html' %} <br />
+{% block content %} <br />
+<form action="" method="post">
+    {% csrf_token %} <br/>
+    {{ form_1.as_p }}<br/> 
+    <button type="submit", class="btn btn-info">Change</button>
+</form>
+<br />
+{% endblock %}

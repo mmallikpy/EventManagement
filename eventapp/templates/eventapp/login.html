@@ -1,0 +1,22 @@
+{% load static %}<br />
+{% include 'eventapp/base.html' %} <br />
+{% block content %}
+<div class="main_div">
+  <div class="login_form_div mt-5">
+    <form action="" method="post">
+      {% csrf_token %}
+      <div>{{ loginForm.username }}</div>
+      <div>{{ loginForm.password }}</div>
+      <div class="mb-3 mt-2">
+        <button type="submit" class="btn btn-success">LogIn</button>
+      </div>
+      <div class="">
+        <a class="text-decoration-none fw-bold" href="{% url 'signup' %}"
+          >SignUp <i class=""></i
+        ></a>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

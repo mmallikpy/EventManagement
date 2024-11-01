@@ -1,0 +1,13 @@
+{% load static %}<br />
+{% include 'eventapp/base.html' %} <br />
+{% block content %} <br />
+<div class="container mt-5">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{eventcat}}
+
+        <button type="submit" class="btn btn-primary btn-lg mt-3" href="{% url 'eventcat' %}">Submit</button>
+    </form>
+</div>
+
+{%endblock %}
